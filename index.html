@@ -446,8 +446,14 @@ body.m .bnav{padding-left:calc(4px + env(safe-area-inset-left));padding-right:ca
       <dt>コマ出力の形式</dt><dd>CCFOLIA（ココフォリア）／CriticalStage のキャラクター貼り付け形式<br><span class="src">各サービス名は各権利者の商標または登録商標です。</span></dd>
       <dt>フォント</dt><dd>Noto Sans JP、Shippori Mincho B1（Google Fonts／SIL Open Font License 1.1）</dd>
       <dt>ツールの制作</dt><dd>山吹</dd>
-      <dt>ツールのバージョン</dt><dd>バージョン1.11（2026年11月9日）</dd>
+      <dt>ツールのバージョン</dt><dd>バージョン1.2（2026年11月20日）</dd>
       <dt>変更履歴</dt><dd>
+        <b>バージョン1.2</b>（2026年11月20日）
+        <ul>
+          <li>PvEモードでキャスターのクラス特性「創造」を変更しました。陣地のHP/FPに関する記載を削除し、「陣地作成の使用回数による追加FP獲得量の減少を-2する（下限0）」を追加しました。陣地作成の追加FPの自動計算に反映します（付与する追加FP＝【魔力】－（使用回数－2、0未満は0））。通常モードは変わりません。</li>
+          <li>PvEモードの陣地作成に、使用回数が霊地で回復する旨を追記しました（制限欄に「※霊地で回復可能」、使用回数の欄にも案内を表示）。</li>
+          <li>スマホ版で、各ページの一番下の項目が下部のメニューに隠れていた表示の不具合を修正しました。</li>
+        </ul>
         <b>バージョン1.11</b>（2026年11月9日）
         <ul>
           <li>PvEモードのプリセットに、PvEレギュレーション資料の固有マスタースキル18種（洗礼詠唱・専攻分野・召喚術師など）と魔術スキル3種（宝石魔術・梟の目・武装錬成）を追加しました。召喚術師・容量増加・梟の目・明鏡止水は英雄点・ステータス上限・最大FPの計算に反映します。</li>
@@ -531,7 +537,8 @@ body.m .bnav{padding-left:calc(4px + env(safe-area-inset-left));padding-right:ca
           <li>アーチャーのクラス特性「射撃」：先制判定補正値『+4』（先制基準値に反映）。1ラウンド1回、手番を消費せずに攻撃援護を実行可能。「狩人」：1ラウンド1回（非戦闘時は1シーン1回）、任意の探索判定に+15%の補正（追跡基準値の+10はなし）。</li>
           <li>ルーラーのクラス特性「粛清」：取得時に強化属性を1種選び、攻撃対象がその属性を持っていれば攻撃判定の補正値『+2』（他の補正値変動系スキルと重複）。指定する強化属性の欄が出ます。</li>
           <li>クラススキル「騎乗」：先制/追跡判定補正値『+4』（常時。先制・追跡の基準値に反映）。「単独行動」：終了フェイズ開始時、FPの自然回復量「+2」（1シーン1回）。「狂化」：クリンナップフェイズ開始時のマスターのFP消費効果を削除。</li>
-          <li>クラススキル「陣地作成」：戦闘開始時、味方全員に「【魔力】－n」点の「追加FP」を付与（シナリオ中n回、上限5回）。陣地作成を選ぶと「陣地作成の使用回数」の欄が出て、効果文の点数をサーヴァントの【魔力】と使用回数から自動で計算します。</li>
+          <li>クラススキル「陣地作成」：戦闘開始時、味方全員に「【魔力】－n」点の「追加FP」を付与（シナリオ中n回、上限5回）。陣地作成を選ぶと「陣地作成の使用回数」の欄が出て、効果文の点数をサーヴァントの【魔力】と使用回数から自動で計算します。使用回数は霊地で回復します（制限欄に「※霊地で回復可能」と記載）。</li>
+          <li>キャスターのクラス特性「創造」：「道具作成」の制限をシナリオ4回に変更。陣地作成の使用回数による追加FPの減少を-2する（下限0）。付与する追加FP＝【魔力】－（使用回数－2、0未満は0）。陣地のHP/FPに関する記載はPvEでは削除。</li>
         </ul></li>
       <li>切り替えたとき、宝具の即死効果の記載と「代行者」の記載は自動で書き換えます（通常に戻すと元の記載に戻します）。PvE中にプリセットから追加したものもPvE用の記載で入ります。</li>
       <li><b>PvE用の追加プリセット</b>：PvEモードでは、PvEレギュレーション資料「第三項：固有マスタースキル」のスキルをプリセットに加えます（選択欄の見出し「PvEレギュレーション追加」）。マスタースキル（固有）に18種（洗礼詠唱・専攻分野・完全記憶・結界術士・効率供給・回路増強・魔術強化・人造生命α/β・強化令呪・容量増加・明鏡止水・召喚術師・簡易連結・予測演算・奉仕の心得・陣頭指揮・太陽神の加護）、魔術スキルに3種（宝石魔術・梟の目・武装錬成）。同じ・似た効果のもの（霊基融合・副召喚主・物資調達・乾坤一擲・強化人間・起源覚醒・フィンの一撃）は既存のプリセットを使います。</li>
@@ -589,7 +596,7 @@ body.m .bnav{padding-left:calc(4px + env(safe-area-inset-left));padding-right:ca
   <div class="card" id="ab-env"><h2>動作環境</h2>
     <ul>
       <li>PC・スマートフォンの最新のブラウザ（Chrome／Edge／Safari／Firefox）。画面幅が狭いと自動でスマホ版の画面になります（メニューの「表示」で切り替え可）。</li>
-      <li>ツールのバージョン：バージョン1.11（保存・JSONのデータ形式は version 3）</li>
+      <li>ツールのバージョン：バージョン1.2（保存・JSONのデータ形式は version 3）</li>
     </ul>
   </div>
 </section>
@@ -1169,11 +1176,15 @@ const PVE_CS = {
   "騎乗":"タイプ：補正値変動系\n発動： 常時\n制限：なし\n効果：\n・先制/追跡判定補正値『+4』。\n・この効果は他の補正値変動系スキルと重複する。",
   "単独行動":"タイプ：独自系\n発動：終了フェイズ開始時\n制限：1シーン1回\n効果：FPの自然回復量「+2」"
 };
-/* 陣地作成：付与する追加FP＝サーヴァントの【魔力】－使用回数n */
+/* 陣地作成：付与する追加FP＝サーヴァントの【魔力】－使用回数n
+   キャスターの特性「創造」（PvE）は、使用回数による減少を-2する（減少量の下限0）＝【魔力】－max(0, n－2) */
 function jinchiInfo(s){
   const v = s.servant, mag = rankIdx(num(v.stats.mag.mod) + num(v.stats.mag.p));
   const n = Math.min(5, Math.max(1, Math.round(num(v.jinchiN)) || 1));
-  return {mag, n, fp: mag - n};
+  const sozo = v.trait === "創造";
+  const red = sozo ? Math.max(0, n - 2) : n;
+  const why = sozo ? `【魔力】${mag}－減少${red}（使用回数${n}－2、クラス特性「創造」、下限0）` : `【魔力】${mag}－使用回数${n}`;
+  return {mag, n, red, sozo, fp: mag - red, why};
 }
 function csEffect(name, s = state){
   const base = (CS_BY[name] || {}).effect || "";
@@ -1181,14 +1192,15 @@ function csEffect(name, s = state){
   if(PVE_CS[name]) return PVE_CS[name];
   if(name === "陣地作成"){
     const J = jinchiInfo(s);
-    return `タイプ：独自系\n発動：戦闘開始時\n制限：シナリオ中${J.n}回(上限5回)\n効果：\n・味方全員に「${J.fp}」点の「追加FP」を付与する\n　（【魔力】${J.mag}－使用回数${J.n}）`;
+    return `タイプ：独自系\n発動：戦闘開始時\n制限：シナリオ中${J.n}回(上限5回)※霊地で回復可能\n効果：\n・味方全員に「${J.fp}」点の「追加FP」を付与する\n　（${J.why}）`;
   }
   /* 狂化（各レベル共通）：クリンナップフェイズ開始時のマスターのFP消費効果を削除 */
   if(/^狂化Lv\./.test(name)) return base.replace(/\/[①-⑤]クリンナップフェイズ開始時/, "").replace(/\n[①-⑤]マスターのFPを\d+点消費する。\n\s*マスターのFPが尽きた際はマスターのHPで代用する。/, "");
   return base;
 }
-/* クラス特性の効果文（PvEはルーラー「粛清」、アーチャー「射撃」「狩人」を変更） */
+/* クラス特性の効果文（PvEはルーラー「粛清」、アーチャー「射撃」「狩人」、キャスター「創造」を変更） */
 const PVE_TRAIT = {
+  "創造":"「道具作成」の制限「シナリオ3回」から「シナリオ4回」に変更する。\n＆「陣地作成」の使用回数による追加FP獲得量の減少を-2する(下限0)。",
   "射撃":"・先制判定補正値『+4』。\n・1ラウンド1回、手番を消費せずに攻撃援護を実行可能。",
   "狩人":"・1ラウンド1回(非戦闘時は1シーン1回)、任意の探索判定に+15%の補正。"
 };
@@ -1445,8 +1457,8 @@ function compute(s){
     if(v.mods.spell !== "―") W.push({l:"err",t:"PvEでは「魂底歪曲」を取得できないため、魂底歪曲による消費令呪は使えません"});
     if(v.classSkills.includes("陣地作成")){
       const J = jinchiInfo(s);
-      put("s.jinchi", `${J.fp} 点（【魔力】${J.mag}－使用回数${J.n}）`, J.fp <= 0);
-      if(J.fp <= 0) W.push({l:"warn",t:`陣地作成：付与する追加FPが${J.fp}点です（【魔力】${J.mag}－使用回数${J.n}）`});
+      put("s.jinchi", `${J.fp} 点（${J.why}）`, J.fp <= 0);
+      if(J.fp <= 0) W.push({l:"warn",t:`陣地作成：付与する追加FPが${J.fp}点です（${J.why}）`});
     }
     if(v.trait === "粛清(PL用)" && v.purgeTrait === "―") W.push({l:"warn",t:"クラス特性「粛清」で指定する強化属性を選んでください"});
   }
@@ -1773,7 +1785,7 @@ function renderServant(){
   <div class="card"><h2>クラススキル <span class="hint">最低1つ・最大3つ／${v.cls}で習得できるものだけを表示</span></h2>
     <div class="reqbox">必須クラススキル：<b>${C_("s.req")}</b><span class="reqstate" data-c="s.reqState"></span></div>
     ${[0,1,2].map(i => `<div class="slot"><div class="slot-h"><span class="no">#${i+1}</span>${fld("", `servant.classSkills.${i}`, {type:"select",options:csOptions(v, i)})}<span class="chipc">必要英雄点 ${C_(`s.cs.${i}.cost`)}</span></div>${FX(`s.cs.${i}.fx`)}</div>`).join("")}
-    ${isPve() && v.classSkills.includes("陣地作成") ? `<div class="grid pve-box">${fld("陣地作成の使用回数（シナリオ中・上限5回）","servant.jinchiN",{type:"select",options:[1,2,3,4,5],n:true,w:"w2"})}<div class="f w2"><span>付与する追加FP（自動計算）</span><div class="calc">${C_("s.jinchi")}</div></div></div>` : ""}
+    ${isPve() && v.classSkills.includes("陣地作成") ? `<div class="grid pve-box">${fld("陣地作成の使用回数（シナリオ中・上限5回）","servant.jinchiN",{type:"select",options:[1,2,3,4,5],n:true,w:"w2"})}<div class="f w2"><span>付与する追加FP（自動計算）</span><div class="calc">${C_("s.jinchi")}</div></div><p class="note" style="grid-column:1/-1;margin:0">使用回数は霊地で回復します。${v.trait === "創造" ? "クラス特性「創造」により、使用回数による減少を-2しています（下限0）。" : ""}</p></div>` : ""}
     <p class="note">必要英雄点は参照シートのクラス別適正表の点数（0〜3点）が自動で入ります。必須クラススキルも表の点数がかかり、0点とは限りません（例：キャスターの陣地作成は1点）。狂化は Lv×3 の英雄点を得ます。${isPve() ? "PvEでは騎乗・単独行動・陣地作成・狂化の効果がPvE用の記載になります。" : ""}</p>
   </div>
   ${listEditor("servant.skills","固有スキル",C_("s.sk"), F_SK, PRESET_SKILL, 5)}
