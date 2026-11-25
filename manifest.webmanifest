@@ -1,6 +1,6 @@
 {
-  "name": "聖杯戦争TRPG キャラシメーカー",
-  "short_name": "キャラシメーカー",
+  "name": "聖杯戦争TRPG キャラシメーカー（Ghost of Maiden対応版）",
+  "short_name": "キャラシGoM",
   "description": "聖杯戦争TRPG（Ver.T6＋Fate/GHost of Maiden Ver.2.2）のキャラクターシート作成ツール",
   "lang": "ja",
   "start_url": "./",

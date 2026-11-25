@@ -1,4 +1,4 @@
-# 聖杯戦争TRPG キャラシメーカー（GitHub Pages 公開用）
+# 聖杯戦争TRPG キャラシメーカー（Ghost of Maiden対応版）GitHub Pages 公開用
 
 聖杯戦争TRPG（Ver.T6＋Fate/GHost of Maiden Ver.2.2）のキャラクターシート作成ツールです。
 サーバー側の処理はありません。入力した内容は、開いた端末のブラウザ内（ホーム画面アプリの場合はそのアプリ内）にだけ自動保存されます。
